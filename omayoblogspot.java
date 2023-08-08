@@ -66,8 +66,7 @@ public class omayoblogspot {
 	driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[9]/div[1]/button")).click();
 	Thread.sleep(2000);
 		
-	//iframe
-	//driver.findElement(By.xpath("//*[@id=\"HTML21\"]"));
+	
 	//selenium143link
 		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[5]/div[1]/a")).click();
 		Thread.sleep(2000);
@@ -78,10 +77,7 @@ public class omayoblogspot {
 		driver.navigate().back();
 		Thread.sleep(2000);
 		
-		//multiple options
-		s=new Select(driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[2]/div[1]/select")));
-		s.selectByIndex(1);
-		Thread.sleep(3000);
+		
 	//timerenablebutton
 		//driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[19]/div[1]/input")).click();
 		//Thread.sleep(2000);
