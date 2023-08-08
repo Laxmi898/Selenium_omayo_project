@@ -25,11 +25,11 @@ public class omayoblogspot {
 	s.selectByIndex(3);
 	Thread.sleep(2000);
 	//multiple options
-	//s=new Select(driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[2]/div[1]/select")));
-	//s.selectByIndex(1);
-	//s.selectByIndex(2);
-	//s.selectByIndex(3);
-	//s.selectByIndex(4);
+	s=new Select(driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[2]/div[1]/select")));
+	s.selectByIndex(1);
+	s.selectByIndex(2);
+	s.selectByIndex(3);
+	
 	//Thread.sleep(2000);
 	//blogs
 			driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div/div[1]/div/ul/li[2]/a")).click();
