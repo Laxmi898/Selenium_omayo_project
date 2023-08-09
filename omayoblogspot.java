@@ -93,7 +93,7 @@ public class omayoblogspot {
 		Thread.sleep(2000);
 		//get confirmation
 		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div[1]/div[8]/div[1]/input")).click();
-		//driver.switchTo().alert().sendKeys("get confirmation code");
+		
 		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
 		Thread.sleep(2000);
