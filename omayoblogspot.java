@@ -30,7 +30,7 @@ public class omayoblogspot {
 	s.selectByIndex(2);
 	s.selectByIndex(3);
 	
-	//Thread.sleep(2000);
+	Thread.sleep(4000);
 	//blogs
 			driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div/div[1]/div/ul/li[2]/a")).click();
 			Thread.sleep(2000);
@@ -77,23 +77,6 @@ public class omayoblogspot {
 		driver.navigate().back();
 		Thread.sleep(2000);
 		
-		
-	//timerenablebutton
-		//driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[19]/div[1]/input")).click();
-		//Thread.sleep(2000);
-		//System.out.println(driver.switchTo().alert().getText());
-		//Thread.sleep(3000);
-	//click after text disappear
-		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[15]/div[1]/input")).click();
-		driver.switchTo().alert().accept();
-		Thread.sleep(2000);
-		//get confirmation
-		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div[1]/div[8]/div[1]/input")).click();
-		//driver.switchTo().alert().sendKeys("get confirmation code");
-		Thread.sleep(3000);
-		driver.switchTo().alert().accept();
-		Thread.sleep(2000);
-	
 		//getprompt
 		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div[1]/div[7]/div[1]/input")).click();
 		Alert alert=driver.switchTo().alert();
@@ -102,11 +85,19 @@ public class omayoblogspot {
 		Thread.sleep(4000);
 		alert.accept();
 		Thread.sleep(2000);
-		
-		//clickgetalert
-		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div[1]/div[4]/div[1]/input")).click();
+				
+	
+	//click after text disappear
+		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[15]/div[1]/input")).click();
 		driver.switchTo().alert().accept();
 		Thread.sleep(2000);
+		//get confirmation
+		driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div[1]/div[8]/div[1]/input")).click();
+		//driver.switchTo().alert().sendKeys("get confirmation code");
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
+		Thread.sleep(2000);
+			
 		//open popup window
 				driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/aside/div/div[17]/div[1]/p/a")).click();
 				Thread.sleep(4000);
